@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung | Patrick Roßkothen</title>
+    <style>
+        :root {
+            --primary-color: #2d3436;
+            --text-color: #2d3436;
+            --bg-color: #ffffff;
+            --accent-color: #0984e3;
+            --line-height: 1.6;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: var(--line-height);
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary-color);
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 0;
+            color: var(--primary-color);
+        }
+
+        .meta-info {
+            font-size: 0.9rem;
+            color: #636e72;
+            margin-top: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 1rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+        }
+
+        address {
+            font-style: normal;
+            background: #f9f9f9;
+            padding: 1rem;
+            border-radius: 4px;
+            border-left: 3px solid #dfe6e9;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .security-note {
+            background-color: #e3f2fd;
+            padding: 1rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+
+        @media print {
+            body { padding: 0; }
+            .container { max-width: 100%; }
+            h2 { border-left: none; padding-left: 0; text-decoration: underline; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Datenschutzerklärung</h1>
+        <p class="meta-info">Stand: <time datetime="2026-03">März 2026</time></p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Verantwortlicher</h2>
+            <p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:</p>
+            <address>
+                <strong>Patrick Roßkothen</strong><br>
+                Mercatorstr. 108<br>
+                47051 Duisburg<br><br>
+                E-Mail: <a href="mailto:patrick.rosskothen@wiundwe.de">patrick.rosskothen@wiundwe.de</a><br>
+                Telefon: <a href="tel:+491773522745">0177 / 35 22 745</a>
+            </address>
+        </section>
+
+        <section>
+            <h2>2. Welche Daten wir verarbeiten und warum</h2>
+            
+            <h3>a) Server-Logfiles</h3>
+            <p>Beim Aufruf dieser Anwendung erfasst unser Webserver (gehostet bei Hetzner Cloud, Deutschland) automatisch folgende Daten: IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene URL, verwendeter Browser und Betriebssystem sowie Referrer-URL. Diese Daten werden ausschließlich zur Sicherstellung des technischen Betriebs und zur Abwehr von Angriffen verwendet (Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO – berechtigtes Interesse). Sie werden nach spätestens 7 Tagen automatisch gelöscht.</p>
+
+            <h3>b) Registrierung und Login (Supabase Auth)</h3>
+            <p>Für die Nutzung der Anwendung ist eine Registrierung mit E-Mail-Adresse und Passwort erforderlich. Diese Daten werden zur Authentifizierung verarbeitet (Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO – Vertragserfüllung). Die Authentifizierung erfolgt über Supabase (Supabase, Inc., 970 Trestle Glen Rd, Oakland, CA 94610, USA) als Auftragsverarbeiter. Mit Supabase besteht ein Auftragsverarbeitungsvertrag. Supabase verarbeitet Daten gemäß EU-Standardvertragsklauseln (SCCs). Weitere Informationen: <a href="https://supabase.com/privacy" target="_blank" rel="noopener">https://supabase.com/privacy</a></p>
+
+            <h3>c) Anwendungsdaten</h3>
+            <p>Die von Ihnen in der Anwendung eingegebenen Inhalte (z. B. Ziele, Aufgaben) werden auf unserem Server in einer Supabase-Datenbank gespeichert. Diese Daten gehören Ihnen und werden ausschließlich zur Bereitstellung der Anwendungsfunktionen genutzt (Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO).</p>
+
+            <h3>d) Session-Token</h3>
+            <p>Nach dem Login wird ein technisch notwendiger Session-Token im Local Storage Ihres Browsers gespeichert. Dieser Token dient ausschließlich der Aufrechterhaltung Ihrer Sitzung und enthält keine Tracking-Informationen. Er erfordert keine Einwilligung nach § 25 TDDDG.</p>
+        </section>
+
+        <section>
+            <h2>3. Was wir nicht tun</h2>
+            <p>Diese Anwendung verwendet keine Tracking-Cookies, kein Google Analytics oder vergleichbare Analyse-Dienste, keine Werbe- oder Remarketing-Technologien und keine eingebetteten Social-Media-Elemente. Schriftarten werden lokal von unserem Server ausgeliefert; es findet keine Verbindung zu Google Fonts oder anderen externen Font-Diensten statt.</p>
+        </section>
+
+        <section>
+            <h2>4. Hosting und Infrastruktur</h2>
+            <p>Die Anwendung wird auf einem Server der Hetzner Cloud GmbH (Industriestr. 25, 91710 Gunzenhausen, Deutschland) betrieben. Hetzner ist als Auftragsverarbeiter vertraglich gebunden. Alle Daten werden ausschließlich in deutschen Rechenzentren gespeichert. Weitere Informationen: <a href="https://www.hetzner.com/de/legal/privacy-policy" target="_blank" rel="noopener">https://www.hetzner.com/de/legal/privacy-policy</a></p>
+        </section>
+
+        <section>
+            <h2>5. Ihre Rechte</h2>
+            <p>Sie haben gegenüber uns folgende Rechte hinsichtlich Ihrer personenbezogenen Daten:</p>
+            <ul>
+                <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
+                <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
+                <li>Recht auf Löschung (Art. 17 DSGVO)</li>
+                <li>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+                <li>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</li>
+                <li>Recht auf Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
+            </ul>
+            <p>Zur Ausübung Ihrer Rechte wenden Sie sich bitte an: <a href="mailto:patrick.rosskothen@wiundwe.de">patrick.rosskothen@wiundwe.de</a></p>
+            <p>Sie haben zudem das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren. Die zuständige Behörde für Nordrhein-Westfalen ist die Landesbeauftragte für Datenschutz und Informationsfreiheit NRW (<a href="https://www.ldi.nrw.de" target="_blank" rel="noopener">www.ldi.nrw.de</a>).</p>
+        </section>
+
+        <section>
+            <h2>6. Datensicherheit</h2>
+            <div class="security-note">
+                <p>Die Übertragung zwischen Ihrem Browser und unserem Server erfolgt ausschließlich verschlüsselt über HTTPS (TLS). Zugänge zum Server sind durch SSH-Schlüssel und eine Firewall abgesichert. Passwörter werden von Supabase gehasht gespeichert und sind für uns nicht einsehbar.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>7. Änderungen dieser Datenschutzerklärung</h2>
+            <p>Wir behalten uns vor, diese Datenschutzerklärung bei technischen oder rechtlichen Änderungen anzupassen. Die jeweils aktuelle Version ist in der Anwendung abrufbar.</p>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>
